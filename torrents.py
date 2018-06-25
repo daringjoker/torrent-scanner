@@ -1,6 +1,6 @@
 import urllib3
 from bs4 import BeautifulSoup
-
+import os
 
 
 def getlinks(torrent,site):
@@ -74,3 +74,4 @@ if (__name__ == "__main__") :
 	for site in sites:
 		links=getlinks(torrent,site)
 		trylinks(links,torrent)
+	os.system("pause")
